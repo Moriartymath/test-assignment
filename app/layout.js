@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col  items-center mt-20 gap-10`}
       >
-        <header className="text-2xl z-10  py-4 px-2">
+        <header className="text-2xl   py-4 px-2 w-full bg-red-100 justify-center flex ">
           <h1>Choose the car of your dream</h1>
         </header>
-        <main className="w-full z-10 ">
+        <main className="w-full  h-full 0 bg-orange-50">
           <Suspense fallback={<Loading />} key={Math.random()}>
             {children}
           </Suspense>

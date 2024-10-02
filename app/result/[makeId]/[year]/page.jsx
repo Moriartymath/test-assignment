@@ -39,7 +39,7 @@ async function page({ params }) {
 
   return (
     <div className="flex flex-col justify-center items-center gap-6">
-      <div className="flex flex-row gap-4 text-2xl justify-start">
+      <div className="flex flex-row gap-4 text-2xl justify-start pt-4">
         {list?.length ? (
           <>
             <h1>
@@ -55,7 +55,7 @@ async function page({ params }) {
       {list?.length ? <ListOfCars list={list} /> : null}
       <Link
         href={"/"}
-        className="py-2 px-4 border-2 border-slate-400 rounded-md mt-24"
+        className="py-2 px-4 border-2 border-slate-400 rounded-md mt-10 bg-white"
       >
         Choose another brand or year
       </Link>
