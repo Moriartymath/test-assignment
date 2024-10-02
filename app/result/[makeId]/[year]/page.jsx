@@ -57,7 +57,7 @@ async function page({ params }) {
         href={"/"}
         className="py-2 px-4 border-2 border-slate-400 rounded-md mt-10 bg-white"
       >
-        Choose another brand or year
+        Choose other brand or year
       </Link>
     </div>
   );
