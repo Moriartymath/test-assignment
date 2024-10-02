@@ -1,5 +1,3 @@
-import Image from "next/image";
-import DropdownSelector from "./_components/CarSelector";
 import Wrapper from "./_components/Wrapper";
 
 export default async function Home() {

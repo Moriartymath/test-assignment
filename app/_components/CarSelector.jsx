@@ -1,5 +1,3 @@
-"use client";
-
 function DropdownSelector({ list, carMake, setCarMake }) {
   return (
     <div className=" w-1/2 flex flex-col gap-4 justify-center items-center">
