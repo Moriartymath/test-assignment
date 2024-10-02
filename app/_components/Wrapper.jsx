@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import DropdownSelector from "./DropdownSelector";
+import CarSelector from "./CarSelector";
 import YearSelector from "./YearSelector";
 import Link from "next/link";
 
@@ -12,13 +12,9 @@ function Wrapper({ list }) {
   }/${year}`;
 
   return (
-    <div className="flex flex-col gap-10 w-1/2  justify-center items-center ">
-      <div className="flex flex-row gap-10 w-full  justify-center">
-        <DropdownSelector
-          list={list}
-          setCarMake={setCarMake}
-          carMake={carMake}
-        />
+    <div className="flex flex-col gap-16 w-1/2  justify-center items-center ">
+      <div className="flex flex-row gap-10 w-full  justify-cente">
+        <CarSelector list={list} setCarMake={setCarMake} carMake={carMake} />
         <YearSelector setYear={setYear} year={year} carMake={carMake} />
       </div>
       <button

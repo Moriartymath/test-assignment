@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Suspense } from "react";
+import Loading from "./_components/Loading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,12 +23,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col  items-center mt-20`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col  items-center mt-20 gap-10`}
       >
         <header className="text-2xl">
           <h1>Choose the car of your dream</h1>
         </header>
-        <main className="w-full ">{children}</main>
+        <main className="w-full ">
+          <Suspense fallback={<Loading />} key={Math.random()}>
+            {children}
+          </Suspense>
+        </main>
       </body>
     </html>
   );
