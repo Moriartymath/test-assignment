@@ -2,7 +2,7 @@ import Wrapper from "./_components/Wrapper";
 
 export default async function Home() {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/GetMakesForVehicleType/car?format=json`
+    `${process.env.NEXT_PUBLIC_BASE_URL}/GetMakesForVehicleType/car?format=json`,
   );
   const data = await res.json();
   if (!data) throw new Error("Opps some error ocured!");

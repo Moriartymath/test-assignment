@@ -6,6 +6,8 @@
     "plugin:prettier/recommended" // Integrates Prettier with ESLint
   ],
   "rules": {
+    "import/extensions": ["off"],
+    "import/no-unresolved": "off",
     "prefer-destructuring": [
       "error",
       {

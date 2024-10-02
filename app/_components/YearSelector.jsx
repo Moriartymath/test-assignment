@@ -19,9 +19,9 @@ function YearSelector({ carMake, year, setYear }) {
         <option value="" disabled hidden>
           Choose Year
         </option>
-        {listOfYears.map((year) => (
-          <option value={`${year}`} key={year}>
-            {year}
+        {listOfYears.map((value) => (
+          <option value={`${value}`} key={value}>
+            {value}
           </option>
         ))}
       </select>

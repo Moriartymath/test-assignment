@@ -10,21 +10,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 92.5%;
-  width: 100vw;
-  -webkit-font-smoothing: antialiased;
-  height: 100vh;
-  color: rgb(69, 68, 68);
-  overflow: hidden;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  padding: 2rem;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
