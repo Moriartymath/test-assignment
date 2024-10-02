@@ -21,9 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col  items-center mt-20`}
       >
-        {children}
+        <header className="text-2xl">
+          <h1>Choose the car of your dream</h1>
+        </header>
+        <main className="w-full ">{children}</main>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ function YearSelector({ carMake, year, setYear }) {
     <div className=" w-1/3">
       <select
         value={year}
-        className=" h-full w-full text-black text-1xl"
+        className=" h-full w-full text-black text-1xl p-2 border-2 "
         onChange={(e) => setYear(e.currentTarget.value)}
         disabled={carMake === ""}
       >

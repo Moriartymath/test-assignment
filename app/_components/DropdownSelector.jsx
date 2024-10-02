@@ -6,7 +6,7 @@ function DropdownSelector({ list, carMake, setCarMake }) {
       <select
         value={carMake}
         onChange={(e) => setCarMake(e.currentTarget.value)}
-        className=" h-full w-full text-black text-1xl"
+        className=" h-full w-full text-black text-1xl p-2 border-2 "
       >
         {list.map((vechicle) => (
           <option value={vechicle.MakeName} key={vechicle.MakeId}>
