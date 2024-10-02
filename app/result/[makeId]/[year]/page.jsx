@@ -1,6 +1,9 @@
 import Link from "next/link";
 import ListOfCars from "@/app/_components/ListOfCars";
 
+const currentYear = new Date().getFullYear();
+const fromYear = 2015;
+
 export async function generateStaticParams() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/GetMakesForVehicleType/car?format=json`,
@@ -14,8 +17,8 @@ export async function generateStaticParams() {
   if (!results) throw new Error("Opps, cars information not found");
 
   const listOfYears = Array.from(
-    { length: 10 },
-    (_, index) => 2014 + index + 1,
+    { length: currentYear - fromYear + 1 },
+    (_, index) => (index === 0 ? fromYear : fromYear + index),
   );
 
   return results.map(({ MakeId }) =>
