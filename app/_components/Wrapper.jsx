@@ -7,6 +7,9 @@ import Link from "next/link";
 function Wrapper({ list }) {
   const [carMake, setCarMake] = useState("");
   const [year, setYear] = useState("");
+  const link = `/result/${
+    list.find((vechicle) => vechicle.MakeName === carMake)?.MakeId
+  }/${year}`;
 
   return (
     <div className="flex flex-col gap-10 w-1/2  justify-center items-center ">
@@ -23,7 +26,7 @@ function Wrapper({ list }) {
         disabled={carMake === "" || year === ""}
       >
         {carMake && year ? (
-          <Link href={"/h"}>
+          <Link href={link}>
             <h2>Next</h2>
           </Link>
         ) : (
