@@ -1,10 +1,12 @@
 const currentYear = new Date().getFullYear();
 const fromYear = 2015;
+
 function YearSelector({ carMake, year, setYear }) {
   const listOfYears = Array.from(
     { length: currentYear - fromYear + 1 },
-    (_, index) => (index === 0 ? fromYear : fromYear + index)
+    (_, index) => (index === 0 ? fromYear : fromYear + index),
   );
+
   return (
     <div className=" w-1/3 flex flex-col gap-4 justify-center items-center">
       <p>Year</p>

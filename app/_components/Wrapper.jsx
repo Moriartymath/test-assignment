@@ -1,8 +1,9 @@
 "use client";
+
 import { useState } from "react";
+import Link from "next/link";
 import CarSelector from "./CarSelector";
 import YearSelector from "./YearSelector";
-import Link from "next/link";
 
 function Wrapper({ list }) {
   const [carMake, setCarMake] = useState("");
