@@ -39,7 +39,7 @@ async function page({ params }) {
 
   return (
     <div className="flex flex-col justify-center items-center gap-6">
-      <div className="flex flex-row gap-4 text-2xl justify-start pt-4">
+      <div className="flex flex-row gap-4 text-2xl justify-start">
         {list?.length ? (
           <>
             <h1>

@@ -1,7 +1,6 @@
 const currentYear = new Date().getFullYear();
 const fromYear = 2015;
 function YearSelector({ carMake, year, setYear }) {
-  console.log(currentYear);
   const listOfYears = Array.from(
     { length: currentYear - fromYear + 1 },
     (_, index) => (index === 0 ? fromYear : fromYear + index)

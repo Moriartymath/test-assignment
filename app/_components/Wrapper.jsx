@@ -12,8 +12,8 @@ function Wrapper({ list }) {
   }/${year}`;
 
   return (
-    <div className="flex flex-col gap-16 w-1/2  justify-center items-center ">
-      <div className="flex flex-row gap-10 w-full  justify-cente">
+    <div className="flex flex-col gap-16 w-4/5  justify-center items-center bg-white rounded-md border-2 border-black p-4">
+      <div className="flex flex-row gap-10 w-full  justify-center">
         <CarSelector list={list} setCarMake={setCarMake} carMake={carMake} />
         <YearSelector setYear={setYear} year={year} carMake={carMake} />
       </div>

@@ -16,6 +16,7 @@ html {
   -webkit-font-smoothing: antialiased;
   height: 100vh;
   color: rgb(69, 68, 68);
+  overflow: hidden;
 }
 
 body {
