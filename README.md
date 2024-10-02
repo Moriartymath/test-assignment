@@ -16,6 +16,17 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Build
+```
+npm run build
+
+```
+## Lint
+```
+npm run lint
+
+```
+
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 ## This web-application provides plain UI with valuable data about cars
