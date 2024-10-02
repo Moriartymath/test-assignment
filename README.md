@@ -18,4 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
+## This web-application provides plain UI with valuable data about cars
+
+- User can choose car brand and year to retrive data about all models of cars there was manufactured in provided year.
+
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
